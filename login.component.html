@@ -1,0 +1,205 @@
+
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="../../../../assets/images/brand3.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavlog"
+        aria-controls="navbarNavlog" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavlog">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a routerLink="/home"><span class="nav-link">Home</span> </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/benefits">Benefits</a>
+          </li>
+  
+        <!---   <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/login']">Login</a>
+          </li> -->
+  
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li> -->
+  
+        </ul>
+      </div>
+  
+  
+    </nav>
+  </section>  
+  <!-- <section class="mob-login-menu" >
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"> <img src="../../../../assets/images/brand3.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+  
+  <!-- <div class="homeSign_wrap">
+    <div class="left">
+    </div> -->
+  
+  
+  <!-- <div class="right"> -->
+  <!-- <div class="logo"><img src="../../../../assets/images/brand3.png"></div> -->
+  <!-- <div class="arti_whitebox">
+        <div class="artificlIn">
+          <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+            <span class="title" style="font-weight: 600;margin-bottom: 10px;">Sign In</span>
+            <span class="title titleA">Artificial Intelligence</span>
+  
+            <div class="artifi_textbox_label">Your User ID* </div>
+  
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+              </div>
+              <input type="text" class="form-control artiText_box" formControlName="userId" placeholder="User ID">
+            </div>
+  
+            <div class="artifi_textbox_label">Your Password </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+              </div>
+              <input type="password" class="form-control artiText_box" formControlName="password" placeholder="********">
+            </div>
+  
+            <div class="SignbtnWrp">
+              <input class="signbutton" type="Submit" value="Sign In">
+              <input class="signbutton resetbutton" type="button" value="Reset">
+  
+            </div>
+          </form>
+  
+        </div>
+  
+      </div>
+      
+  
+      
+    </div>
+  </div> -->
+  <section class="login-new-sec">
+    <div class="container login-new">
+      <div class="row">
+        <div class="col-lg-6 col-md-5 left-login">
+          <div class="login-left-withlogo">
+            <div class="imgg1"><a href="http://sandbox.artifie.ai/"><img class="login-logo" src="/assets/images/logo-m.png"></a></div>
+            <div class="imgg"> <img class="login-bann" src="/assets/images/login-bann.png" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7 right-login">
+          <div class="login-right-withform">
+            <h3 style="text-align: center;">SIGN IN</h3>
+            <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label class="col-form-label">User Id <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" formControlName="userId" placeholder="User ID">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Password <span style="color: red;">*</span></label>
+                <input type="password" class="form-control" formControlName="password" placeholder="********">
+              </div>
+             <br>
+              <div class="footer-login-btn">
+                <button type="submit" class="btn btn-primary signin" value="Sign In">Sign In</button>&nbsp;
+                <button type="submit" class="btn btn-success reset" value="Reset" (click)="reset()">Reset</button>&nbsp;
+               <br><br>
+                <a href="#!" class="forgotpass">Forgot Password ?</a>
+                <a href="http://sandbox.artifie.ai/" class="only-small pull-right">&laquo; Back to Home</a>
+              </div>
+              </form>
+          </div>
+          
+        </div>
+      </div>
+  
+  
+  
+    </div>
+  </section>
+  <!-- <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-box">
+          <p><b>FIND US</b></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.293769008033!2d77.40806831441371!3d28.500807982469976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce85760da7489%3A0x9c3c69e70e8d063b!2sEdiQue%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1573473338246!5m2!1sen!2sin"
+            width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  
+        </div>
+  
+        <div class="col-md-4 footer-box">
+          <p><b>OUR OFFICE</b></p>
+          <p><i class="fa fa-map-marker"></i>B-1003, 10<sup>th</sup> Floor <br> Advant Navis Business Park
+            <br>Sector-142 Noida Expressway
+            <br> Noida 201305, Uttar Pradesh.
+          </p>
+          <p></p>
+  
+        </div>
+  
+        <div class="col-md-4 footer-box">
+          <p><b>CONTACT US</b></p>
+          <p><i class="fa fa-phone"></i>+91 120 4778801 / 02</p>
+        
+          <p class="copyright">Copyright © 2019. All rights reserved </p>
+        </div>
+  
+      </div>
+      <br>
+    </div>
+  </section> -->
+  
+  
+  <!--==============================================
+      Copyright -- article  section 
+  ===============================================-->
+  
+  <section class="copyright-sec">
+    <div class="container">
+        <div class="row copyright">
+            <div class="col-lg-12 copy-text text-center">
+                <article>Copyright © 2020. All rights reserved</article>
+            </div>
+            <!-- <div class="col-lg-6 copy-text">
+                <ul>
+                    <li><a routerLink="/home/signin">Login | </a></li>
+                    <li><a routerLink="/features">Feature | </a></li>
+                    <li><a routerLink="/benefits">Benefit | </a></li>
+                    <li><a routerLink="/terms">Term & Condition   |</a></li>
+                    <li><a routerLink="/privacy"> Privacy & Policies</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+  </section>
